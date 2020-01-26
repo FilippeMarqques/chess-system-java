@@ -58,6 +58,9 @@ public class IU {
 		System.out.println();
 		System.out.println("Vez : " + chessMatch.getTurn());
 		System.out.println("Aguardando jogador: " + chessMatch.getCurrentPlayer());
+		if (chessMatch.getCheck()) {
+			System.out.println("CHECK!");
+		}
 	}
 
 	public static void printBoard(ChessPiece[][] pieces) {
