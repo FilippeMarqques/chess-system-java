@@ -47,7 +47,7 @@ public class IU {
 			int row = Integer.parseInt(s.substring(1));
 			return new ChessPosition(column, row);
 		} catch (RuntimeException e) {
-			throw new InputMismatchException("Erro ao ler a posição do xadrez. Os valores válidos são de a1 a h8.");
+			throw new InputMismatchException("Erro ao ler a posi"+'\u00E7'+ '\u00E3' +"o do xadrez. Os valores v"+'\u00E1'+"lidos s"+'\u00E3'+"o de a1 a h8.");
 		}
 	}
 
@@ -128,7 +128,7 @@ public class IU {
 				.collect(Collectors.toList());
 		List<ChessPiece> black = captured.stream().filter(x -> x.getColor() == Color.BLACK)
 				.collect(Collectors.toList());
-		System.out.println("Peças Capturadas:");
+		System.out.println("Pe"+'\u00E7'+"as Capturadas:");
 		System.out.print("Branca: ");
 		System.out.print(ANSI_WHITE);
 		System.out.println(Arrays.toString(white.toArray()));

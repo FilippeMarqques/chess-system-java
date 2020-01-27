@@ -38,6 +38,12 @@ public class Program {
 					captured.add(capturedPiece);
 				}
 				
+				if (chessMatch.getPromoted() != null) {
+					System.out.print("Informe a peça para promo"+'\u00E7'+ '\u00E3' +"o(B/N/R/Q): ");
+					String type = sc.nextLine();
+					chessMatch.replacePromotedPiece(type);
+				}
+				
 				
 			}
 			catch (ChessException e) {

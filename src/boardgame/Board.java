@@ -64,7 +64,7 @@ public class Board {
 	}
 	public boolean thereIsAPiece(Position position) {
 		if(!positionExists(position)) {
-			throw new BoardException("Posição fora do Tabuleiro");
+			throw new BoardException("Posi"+'\u00E7'+ '\u00E3' +"o fora do Tabuleiro");
 		}
 		return piece(position) != null;
 	}
